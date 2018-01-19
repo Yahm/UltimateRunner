@@ -88,10 +88,12 @@ namespace UnitySampleAssets._2D
             hsvbas = new Hsv(HvalueBas, SvalueBas, VvalueBas);
             hsvhaut = new Hsv(HvalueHaut, SvalueHaut, VvalueHaut);
 
+			//lancement de la webcam
             webcam = new VideoCapture(0);
             writer = new VideoWriter("hello.mp4", 24, new Size(300, 300), true);
             matTexture = new Texture2D(webcam.Width, webcam.Height);
             
+			//declechement d'un event
             webcam.ImageGrabbed += new System.EventHandler(handleImg);
             //webcam.Start();
 
@@ -121,6 +123,7 @@ namespace UnitySampleAssets._2D
                     return;
                 }
 
+				//inverse l'image
                 CvInvoke.Flip(mat, mat, FlipType.Horizontal);
 
                 width = mat.Width;
@@ -176,6 +179,7 @@ namespace UnitySampleAssets._2D
                         int cy = (int)(moments.M01 / moments.M00);
                         Point centroid = new Point(cx, cy);*/
                         //Debug.Log(biggestContourArea);
+
                         if (biggestContourArea_past < biggestContourArea)
                         {
                             // Action de saut si l'aire du contour atteint un certain seuil
@@ -187,6 +191,8 @@ namespace UnitySampleAssets._2D
                                 //{
                                     // Read the jump input in Update so button presses aren't missed.
                                     //jump = true;
+
+									//appel de la fonction de Saut
                                     playerController.setJump();
                                 //    jump = false;
                                 //}
