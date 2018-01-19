@@ -16,7 +16,7 @@ public class pointScript : MonoBehaviour {
 		
 	}
 
-    //pour l'implémentation de power ups pour augmenter les points
+    //pour l'implémentation de power ups et pour augmenter les points
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == "Player")

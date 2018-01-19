@@ -189,7 +189,7 @@ namespace UnitySampleAssets._2D
 
                                 //if (!jump)
                                 //{
-                                    // Read the jump input in Update so button presses aren't missed.
+                                    
                                     //jump = true;
 
 									//appel de la fonction de Saut
@@ -197,7 +197,6 @@ namespace UnitySampleAssets._2D
                                 //    jump = false;
                                 //}
 
-                                //go.transform.Translate(Vector3.right);
                             }
                         }
 
@@ -218,10 +217,10 @@ namespace UnitySampleAssets._2D
 
         private void FixedUpdate()
         {
-            // Read the inputs.
+
             bool crouch = Input.GetKey(KeyCode.LeftControl);
             //float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            // Pass all parameters to the character control script.
+
             //character.Move(0, false, jump);
             
 

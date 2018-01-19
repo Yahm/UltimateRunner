@@ -15,7 +15,7 @@ public class GroundSpawner : MonoBehaviour {
         rate = 1.9f;
     }
 
-    //Instantiation d'une nouvelle sprite sol pour crée l'effet de sol infini
+    //Instantiation d'une nouvelle sprite sol pour créer l'effet de sol infini
     private void Update() {
         //délai de spawn
         //rate constitue le temps de parcours de la sprite

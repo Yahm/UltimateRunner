@@ -61,7 +61,7 @@ public class cameraFollow : MonoBehaviour {
         this.isLocked = false;
     }
 
-    //Check if the player is inside the camera box. If not, it changes it position to make it so or kill him if he fall.
+	//Vérifie si le joueur est dans le champ de la caméra,si non change sa position, ou le detruit s'il tombe.
     private void checkIfInsideCameraBox() {
         Vector3 playerPositionCamera = Camera.main.WorldToScreenPoint(target.position);
         if (target != null) {

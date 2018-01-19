@@ -62,6 +62,7 @@ public class detectionScript : MonoBehaviour {
             //conversion en niveau de gris
             CvInvoke.CvtColor(mat, matGray, ColorConversion.Bgr2Gray);
 
+			//detection du visage.
             frontFaces = frontfaceCascadeClassifier.DetectMultiScale(image: matGray,
                                                                      scaleFactor: 1.1,
                                                                      minNeighbors: 5,
@@ -77,6 +78,7 @@ public class detectionScript : MonoBehaviour {
 
             if(frontFaces.Length > 0)
             {
+				//affichage du carré detecté
                 CvInvoke.Rectangle(mat, frontFaces[0], new MCvScalar(200, 100, 0), 5);
             }
             //CvInvoke.Imshow("Window", mat);
