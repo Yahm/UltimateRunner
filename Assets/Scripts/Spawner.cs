@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour {
         }
         
         GameObject obj_instance = Instantiate(obj[rand], transform.position, Quaternion.identity);
-        obj_instance.GetComponent<EnemyController>().speed = valeur;
+        //obj_instance.GetComponent<EnemyController>().speed = valeur;
 
         float randSpawn = Random.Range(spawn_time_min, spawn_time_max);
 
