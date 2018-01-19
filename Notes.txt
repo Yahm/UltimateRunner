@@ -1,2 +1,6 @@
+You will need a blue object(prefer blue) to trigger the jump
+
+
+//***Credits***//
 Music: https://www.bensound.com
 Sprites : https://edermunizz.itch.io/free-pixel-art-forest
