@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour {
     float valeur;
     int check = 0;
 
-    int speedCheck = 200;
+    int speedCheck = 100;
 
     // Use this for initialization
     void Start () {
@@ -34,12 +34,12 @@ public class Spawner : MonoBehaviour {
         
         if((int)PlayerPrefs.GetFloat("points") >= speedCheck)
         {
-            valeur += 10;
-            speedCheck *= 2;
+            valeur += 5;
+            speedCheck += 100;
         }
         
         GameObject obj_instance = Instantiate(obj[rand], transform.position, Quaternion.identity);
-        //obj_instance.GetComponent<EnemyController>().speed = valeur;
+        obj_instance.GetComponent<EnemyController>().speed = valeur;
 
         float randSpawn = Random.Range(spawn_time_min, spawn_time_max);
 

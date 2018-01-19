@@ -10,7 +10,6 @@ using System.IO;
 using System.Drawing;
 using Emgu.CV.Util;
 using UnitySampleAssets.CrossPlatformInput;
-using System.ServiceModel;
 using System;
 
 namespace UnitySampleAssets._2D
