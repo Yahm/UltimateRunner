@@ -9,7 +9,8 @@ Try to surive!!!
 
 
 
-Exe file in build folder
+Exe file in build zip
+Release link : https://github.com/Yahm/UltimateRunner/releases/tag/v1.0
 
 //Credits// 
 Music: https://www.bensound.com 
