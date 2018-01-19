@@ -9,7 +9,7 @@ Try to surive!!!
 
 
 
-Exe file in build zip
+Exe file in build.rar
 
 Release link : https://github.com/Yahm/UltimateRunner/releases/tag/v1.0
 
