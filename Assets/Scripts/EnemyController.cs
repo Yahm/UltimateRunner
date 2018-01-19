@@ -9,6 +9,10 @@ public class EnemyController : MonoBehaviour {
 
     //Gestion du déplacement des ennemis (vers la gauche)
     private void Update() {
+
+		//acceleration de vitesse
+		speed = GameObject.Find ("EnemySpawner").GetComponent<Spawner> ().valeur;
+
         //Debug.Log(speed);
         transform.position = new Vector3(transform.position.x - speed * 0.05f, transform.position.y, transform.position.z);
     }

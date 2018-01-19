@@ -7,6 +7,8 @@ public class StartScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		PlayerPrefs.SetFloat("points", 0);
 		
 	}
 	

@@ -90,7 +90,6 @@ namespace UnitySampleAssets._2D
 
 			//lancement de la webcam
             webcam = new VideoCapture(0);
-            writer = new VideoWriter("hello.mp4", 24, new Size(300, 300), true);
             matTexture = new Texture2D(webcam.Width, webcam.Height);
             
 			//declechement d'un event
@@ -244,6 +243,7 @@ namespace UnitySampleAssets._2D
         }
 
 
+		//affichage dans une texture à l'écran
         private Texture2D convertFromMatToTexture2D(Mat matImage, Texture2D tex)
         {
             MemoryStream memstream = new MemoryStream();
